@@ -7,6 +7,7 @@ namespace TISklep.Test
 {
     public class Class
     {
-
+        //name variable
+        public string name;
     }
 }
