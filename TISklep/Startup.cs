@@ -59,6 +59,12 @@ namespace TISklep
                     );
 
                 endpoints.MapControllerRoute(
+                    name: "Kategorie",
+                    pattern: "kategorie/{nazwaKategorii}.html",
+                    defaults: new { controller = "Films", action = "ListaFilmow" }
+                    );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });

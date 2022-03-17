@@ -113,3 +113,30 @@ li a {
     margin-right: 2rem;
     text-decoration: none;
 }
+
+table {
+    width: 100%;
+}
+
+th {
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+td {
+    letter-spacing: 1px;
+    
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+table, th, td {
+    border: 1px solid;
+}
