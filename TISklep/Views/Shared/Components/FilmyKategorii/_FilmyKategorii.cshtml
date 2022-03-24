@@ -1,0 +1,9 @@
+﻿@model IEnumerable<TISklep.Models.Movie>
+
+<ul>
+    @foreach (var film in Model)
+    {
+        <li><a href="@Url.Action("Szczegoly", "Films", new { idFilmu = film.MovieId })"> @film.Title</a></li>
+    }
+    
+</ul>
