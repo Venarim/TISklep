@@ -140,3 +140,21 @@ tfoot th {
 table, th, td {
     border: 1px solid;
 }
+
+img {
+    height: 15rem;
+}
+
+.pojedynczy-film {
+    list-style-type: none;
+    width: 30%;
+    float: left;
+}
+
+.wszystkie-filmy::after {
+    display: block;
+    content: " ";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}

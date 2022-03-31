@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TISklep.Models.Movie>
+@{
+    ViewData["Title"] = "Wszystkie filmy";
+}
+<div class="wszystkie-filmy">
+    <ul>
+        @foreach (var film in Model)
+        {
+            <li class="pojedynczy-film">
+                <a href="@Url.Action("Szczegoly","Films",new { idFilmu = film.MovieId })"><img src="~/content/@film.Plakat" /></a>
+            </li>
+        }
+    </ul>
+</div>

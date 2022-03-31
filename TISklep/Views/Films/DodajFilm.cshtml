@@ -1,0 +1,21 @@
+﻿@model TISklep.ViewModels.DodawanieFilmowViewModel
+
+@using (Html.BeginForm("DodajFilm", "Films", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Film.Title, "Podaj Tytul: ")
+    @Html.TextBoxFor(m => m.Film.Title)
+    <br />
+    @Html.LabelFor(m => m.Film.Director, "Podaj Rezysera: ")
+    @Html.TextBoxFor(m => m.Film.Director)
+    <br />
+    @Html.LabelFor(m => m.Film.Description, "Podaj Opis: ")
+    @Html.TextAreaFor(m => m.Film.Description)
+    <br />
+    @foreach (var kategoria in Model.Kategorie)
+    {
+        @Html.RadioButtonFor(m => m.Film.CategoryId, kategoria.CategoryId)
+        @kategoria.Name
+        <br />
+    }
+    <input type="submit" value="Wyślij" />
+}

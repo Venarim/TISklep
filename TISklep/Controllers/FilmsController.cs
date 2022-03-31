@@ -40,9 +40,34 @@ namespace TISklep.Controllers
             return View(film);
         }
 
+        public IActionResult WszystkieFilmy(int idFilmu)
+        {
+            var film = db.Movies.ToList();           
+            return View(film);
+        }
+
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult DodajFilm()
+        {
+            var model = new DodawanieFilmowViewModel();
+            model.Kategorie = db.Categories.ToList();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult DodajFilm(DodawanieFilmowViewModel obj)
+        {
+            obj.Film.ProductionDate = DateTime.Now;
+            db.Movies.Add(obj.Film);
+            db.SaveChanges();
+
+            return RedirectToAction("WszystkieFilmy");
         }
     }
 }
