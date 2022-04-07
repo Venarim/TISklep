@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using TISklep.DAL;
+using TISklep.ViewModels;
 
 namespace TISklep.Controllers
 {
@@ -20,9 +22,13 @@ namespace TISklep.Controllers
 
         public IActionResult Index()
         {
-            var kategorie = db.Categories.ToList();
-            return View(kategorie);
+            IndexViewModel vm = new IndexViewModel();
+
+            vm.FilmyTop3Najdluzsze = db.Movies.OrderByDescending(f => f.DlugoscFilmu).Take(3);
+
+            return View(vm);
         }
+
 
         public IActionResult Privacy()
         {

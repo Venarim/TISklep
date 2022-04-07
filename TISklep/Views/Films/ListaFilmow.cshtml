@@ -25,7 +25,7 @@
         <tr>
             <th>Tytuł filmu</th>
             <th>Reżyser</th>
-            <th>Data produkcji</th>
+            <th>Data dodania</th>
             <th>Cena</th>
         </tr>
     </thead>
@@ -35,7 +35,7 @@
             <tr>
                 <td>@film.Title</td>
                 <td>@film.Director</td>
-                <td>@film.ProductionDate.Value.Date.ToString("dd MMMM yyyy")</td>
+                <td>@film.DataDodania.Value.Date.ToString("dd MMMM yyyy")</td>
                 <td>@film.Price</td>
                 <td>
                     <a href="@Url.Action("Szczegoly", "Films", new { idFilmu = film.MovieId })">&#128270;</a>

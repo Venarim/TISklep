@@ -61,7 +61,7 @@ namespace TISklep.DAL
                     Director = "Marcus Nispel",
                     Description = "20 sierpnia 1973 roku teksańska policja trafiła do stojącego na uboczu domu Thomasa Hewitta - byłego pracownika lokalnej rzeźni. Na miejscu odkryli rozkładające się zwłoki 33 osób, które zostały zamordowane przez psychopatycznego zabójcę noszącego na twarzy maskę z ludzkiej skóry i posługującego się piłą mechaniczną.",
                     Price = 10,
-                    ProductionDate = new DateTime(2020, 5, 4),
+                    DataDodania = new DateTime(2020, 5, 4),
                     Plakat= "teksanska-masakra-pila-mechaniczna.jpg"
                 },
                 new Movie()
@@ -72,7 +72,7 @@ namespace TISklep.DAL
                     Director = "Joel Schumacher",
                     Description = "Mężczyzna dostaje obsesji na punkcie książki, która według niego Descriptionuje i przewiduje jego życie i przyszłość.",
                     Price = 14,
-                    ProductionDate = new DateTime(2021, 3, 16),
+                    DataDodania = new DateTime(2021, 3, 16),
                     Plakat = "numer-23.jpg"
                 },
                 new Movie()
@@ -83,7 +83,7 @@ namespace TISklep.DAL
                     Director = "David Koepp",
                     Description = "Uznany pisarz przenosi się na prowincję, by w spokoju tworzyć kolejne książki. Wkrótce odwiedzi go tajemniczy mężczyzna, który oskarży Raineya o plagiat.",
                     Price = 12,
-                    ProductionDate = new DateTime(2020, 5, 4),
+                    DataDodania = new DateTime(2020, 5, 4),
                     Plakat = "sekretne-okno.jpg"
                 },
                 new Movie()
@@ -94,7 +94,7 @@ namespace TISklep.DAL
                     Director = "Peter Jackson",
                     Description = "Podróż hobbita z Shire i jego ośmiu towarzyszy, której celem jest zniszczenie potężnego pierścienia pożądanego przez Czarnego Władcę - Saurona.",
                     Price = 20,
-                    ProductionDate = new DateTime(2020, 5, 4),
+                    DataDodania = new DateTime(2020, 5, 4),
                     Plakat = "wladca-pierscieni-druzyna-pierscienia.jpg"
                 },
                 new Movie()
@@ -105,7 +105,7 @@ namespace TISklep.DAL
                     Director = "Robert Schwentke",
                     Description = "Emerytowani agenci specjalni CIA zostają wrobieni w zamach. By się ratować, muszą reaktywować stary zespół.",
                     Price = 11,
-                    ProductionDate = new DateTime(2020, 5, 4),
+                    DataDodania = new DateTime(2020, 5, 4),
                     Plakat = "red.jpg"
                 },
                 new Movie()
@@ -116,7 +116,7 @@ namespace TISklep.DAL
                     Director = "Tomasz Sekielski",
                     Description = "Dziennikarz śledczy rozmawia z dziewięcioma księżmi katolickimi, którzy dopuścili się zbrodni pedofilii i molestowania nieletnich, a także ich ofiarami.",
                     Price = 0,
-                    ProductionDate = new DateTime(2021, 4, 4),
+                    DataDodania = new DateTime(2021, 4, 4),
                     Plakat = "tylko-nie-mow-nikomu.jpg"
                 },
                 new Movie()
@@ -127,7 +127,7 @@ namespace TISklep.DAL
                     Director = "Neil Burger",
                     Description = "Wiedeń u progu XX w. Syn rzemieślnika, iluzjonista Eisenheim, wykorzystuje niezwykłe umiejętności, by zdobyć miłość arystokratki, narzeczonej austro-węgierskiego księcia.",
                     Price = 13,
-                    ProductionDate = new DateTime(2020, 5, 4),
+                    DataDodania = new DateTime(2020, 5, 4),
                     Plakat = "iluzjonista.jpg"
                 },
                 new Movie()
@@ -138,7 +138,7 @@ namespace TISklep.DAL
                     Director = "Vincenzo Natali",
                     Description = "Grupa osób budzi się w pełnym śmiertelnych pułapek sześcianie. Nieznajomi muszą zacząć współpracować ze sobą, by przeżyć.",
                     Price = 15,
-                    ProductionDate = new DateTime(2021, 2, 1),
+                    DataDodania = new DateTime(2021, 2, 1),
                     Plakat = "cube.jpg"
                 },
                 new Movie()
@@ -149,7 +149,7 @@ namespace TISklep.DAL
                     Director = "Clive Barker",
                     Description = "Frank Cotton nabywa tajemniczą kostkę, za pomocą której można przywołać demony z piekła.",
                     Price = 16,
-                    ProductionDate = new DateTime(2020, 6, 21),
+                    DataDodania = new DateTime(2020, 6, 21),
                     Plakat = "hellriser.jpg"
                 },
                 new Movie()
@@ -160,7 +160,7 @@ namespace TISklep.DAL
                     Director = "Jonathan Demme",
                     Description = "Seryjny morderca i inteligentna agentka łączą siły, by znaleźć przestępcę obdzierającego ze skóry swoje ofiary.",
                     Price = 17,
-                    ProductionDate = new DateTime(2020, 10, 10),
+                    DataDodania = new DateTime(2020, 10, 10),
                     Plakat = "milczenie-owiec.jpg"
                 }
                 );

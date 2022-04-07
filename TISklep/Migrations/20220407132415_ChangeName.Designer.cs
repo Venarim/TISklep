@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TISklep.DAL;
 
 namespace TISklep.Migrations
 {
     [DbContext(typeof(MoviesContext))]
-    partial class MoviesContextModelSnapshot : ModelSnapshot
+    [Migration("20220407132415_ChangeName")]
+    partial class ChangeName
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -89,9 +91,6 @@ namespace TISklep.Migrations
                     b.Property<string>("Director")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DlugoscFilmu")
-                        .HasColumnType("int");
-
                     b.Property<string>("Plakat")
                         .HasColumnType("nvarchar(max)");
 
@@ -116,7 +115,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 5, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "20 sierpnia 1973 roku teksańska policja trafiła do stojącego na uboczu domu Thomasa Hewitta - byłego pracownika lokalnej rzeźni. Na miejscu odkryli rozkładające się zwłoki 33 osób, które zostały zamordowane przez psychopatycznego zabójcę noszącego na twarzy maskę z ludzkiej skóry i posługującego się piłą mechaniczną.",
                             Director = "Marcus Nispel",
-                            DlugoscFilmu = 0,
                             Plakat = "teksanska-masakra-pila-mechaniczna.jpg",
                             Price = 10m,
                             Title = "Teksańska Masakra Piłą Mechaniczną"
@@ -128,7 +126,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2021, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Mężczyzna dostaje obsesji na punkcie książki, która według niego Descriptionuje i przewiduje jego życie i przyszłość.",
                             Director = "Joel Schumacher",
-                            DlugoscFilmu = 0,
                             Plakat = "numer-23.jpg",
                             Price = 14m,
                             Title = "Numer 23"
@@ -140,7 +137,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 5, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Uznany pisarz przenosi się na prowincję, by w spokoju tworzyć kolejne książki. Wkrótce odwiedzi go tajemniczy mężczyzna, który oskarży Raineya o plagiat.",
                             Director = "David Koepp",
-                            DlugoscFilmu = 0,
                             Plakat = "sekretne-okno.jpg",
                             Price = 12m,
                             Title = "Sekretne Okno"
@@ -152,7 +148,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 5, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Podróż hobbita z Shire i jego ośmiu towarzyszy, której celem jest zniszczenie potężnego pierścienia pożądanego przez Czarnego Władcę - Saurona.",
                             Director = "Peter Jackson",
-                            DlugoscFilmu = 0,
                             Plakat = "wladca-pierscieni-druzyna-pierscienia.jpg",
                             Price = 20m,
                             Title = "Władca Pierścieni: Drużyna Pierścienia"
@@ -164,7 +159,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 5, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Emerytowani agenci specjalni CIA zostają wrobieni w zamach. By się ratować, muszą reaktywować stary zespół.",
                             Director = "Robert Schwentke",
-                            DlugoscFilmu = 0,
                             Plakat = "red.jpg",
                             Price = 11m,
                             Title = "Red"
@@ -176,7 +170,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2021, 4, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Dziennikarz śledczy rozmawia z dziewięcioma księżmi katolickimi, którzy dopuścili się zbrodni pedofilii i molestowania nieletnich, a także ich ofiarami.",
                             Director = "Tomasz Sekielski",
-                            DlugoscFilmu = 0,
                             Plakat = "tylko-nie-mow-nikomu.jpg",
                             Price = 0m,
                             Title = "Tylko nie mów nikomu"
@@ -188,7 +181,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 5, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Wiedeń u progu XX w. Syn rzemieślnika, iluzjonista Eisenheim, wykorzystuje niezwykłe umiejętności, by zdobyć miłość arystokratki, narzeczonej austro-węgierskiego księcia.",
                             Director = "Neil Burger",
-                            DlugoscFilmu = 0,
                             Plakat = "iluzjonista.jpg",
                             Price = 13m,
                             Title = "Iluzjonista"
@@ -200,7 +192,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2021, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Grupa osób budzi się w pełnym śmiertelnych pułapek sześcianie. Nieznajomi muszą zacząć współpracować ze sobą, by przeżyć.",
                             Director = "Vincenzo Natali",
-                            DlugoscFilmu = 0,
                             Plakat = "cube.jpg",
                             Price = 15m,
                             Title = "Cube"
@@ -212,7 +203,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Frank Cotton nabywa tajemniczą kostkę, za pomocą której można przywołać demony z piekła.",
                             Director = "Clive Barker",
-                            DlugoscFilmu = 0,
                             Plakat = "hellriser.jpg",
                             Price = 16m,
                             Title = "Hellraiser: Wysłannik Piekieł"
@@ -224,7 +214,6 @@ namespace TISklep.Migrations
                             DataDodania = new DateTime(2020, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Seryjny morderca i inteligentna agentka łączą siły, by znaleźć przestępcę obdzierającego ze skóry swoje ofiary.",
                             Director = "Jonathan Demme",
-                            DlugoscFilmu = 0,
                             Plakat = "milczenie-owiec.jpg",
                             Price = 17m,
                             Title = "Milczenie Owiec"
