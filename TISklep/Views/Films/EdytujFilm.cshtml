@@ -1,0 +1,25 @@
+﻿@model TISklep.Models.Movie
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(f => f.MovieId)
+    @Html.HiddenFor(f => f.Plakat)
+    <table>
+        <tr>
+            <td>
+                <h1>@Model.Category.Name</h1>
+                @await Component.InvokeAsync("FilmyKategorii", new { nazwaKategorii = Model.Category.Name })
+            </td>
+            <td>
+                <ul>                   
+                    <li>Tytuł: @Html.TextBoxFor(f => f.Title)</li>
+                    <li>Reżyser: @Html.TextBoxFor(f => f.Director)</li>
+                    <li>Opis: @Html.TextBoxFor(f => f.Description)</li>
+                    <li>Cena: @Html.TextBoxFor(f => f.Price)</li>
+                    <li>Data produkcji: @Html.TextBoxFor(f => f.DataDodania, new { @type = "datetime" })</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <button type="submit">Zapisz</button>
+}

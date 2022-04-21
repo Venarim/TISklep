@@ -14,6 +14,7 @@
                 <li>Cena: @Model.Price zł</li>
                 <li>Data produkcji: @Model.DataDodania</li>
             </ul>
+            <button onclick="location.href='@Url.Action("EdytujFilm", "Films", new { id = Model.MovieId })'">Edytuj</button>
         </td>
     </tr>
 </table>

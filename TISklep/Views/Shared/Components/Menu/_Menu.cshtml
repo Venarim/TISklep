@@ -9,5 +9,17 @@
             <a href="@Url.Action("ListaFilmow", "Films", new { nazwaKategorii = kategoria.Name })" class="menu-link"> @kategoria.Name </a>
         }
         <a href="@Url.Action("WszystkieFilmy", "Films")">Wszystkie</a>
+
+        @using (Html.BeginForm("Szukaj", "Films"))
+        {
+            <div class="input-group">
+                <div class="form-outline">
+                    <input type="search" class="form-control" name="fraza" />
+                </div>
+                <button class="btn btn-primary" type="submit">Szukaj</button>
+            </div>
+        }
+
+
     </div>
 </header>
