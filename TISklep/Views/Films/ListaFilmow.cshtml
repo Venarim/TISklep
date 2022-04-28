@@ -40,6 +40,9 @@
                 <td>
                     <a href="@Url.Action("Szczegoly", "Films", new { idFilmu = film.MovieId })">&#128270;</a>
                 </td>
+                <td>
+                    <a href="@Url.Action("DodajDoKoszyka", "Koszyk", new { idFilmu = film.MovieId })">&#128722;</a>
+                </td>
             </tr>
         }
     </tbody>
