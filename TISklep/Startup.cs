@@ -37,9 +37,9 @@ namespace TISklep
                 options.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<IdentityContext>();
 
-            services.AddDbContext<MoviesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MoviesCS")));
+            services.AddDbContext<MoviesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SomeeCS")));
 
-            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MoviesCS")));
+            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SomeeCS")));
 
             services.AddSession();
         }
